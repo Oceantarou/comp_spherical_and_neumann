@@ -53,7 +53,7 @@ def mapa_sintetico(l_min, l_max, seed=1):
     for l in range(l_min, l_max + 1):
         for m in range(0, l + 1):
            
-            leg = Ylm(l, m, pol_1d, 0.0).real          # (nlat,)
+            leg = Ylm(l, m, pol_1d, 0.0).real        
             if m == 0:
                 campo += rng.normal() * leg[:, None]
             else:
